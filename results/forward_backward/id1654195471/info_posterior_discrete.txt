@@ -1,0 +1,45 @@
+[Execution]
+experiment id = 1654195471
+algorithm = Marginal latent state estimation (posterior)
+configuration = discrete-time approximation
+python version = 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
+runtime = 126.418 sec.
+
+[Machine Info]
+processor = x86_64
+ram = 16 GiB
+cpus = physical (4), logical (8), affinity (8)
+os = Linux
+
+[Data]
+trajectory length = 20.0
+number of observations = 17
+boundary = steady state
+
+[Chain Model]
+implementation = uniformly discretized CTSMC / rectangular sum integration
+number of states = 6
+embedded mc transition probabilities = 
+	[0.0, 0.28429766, 0.23085189, 0.26488691, 0.0970054, 0.12295814]
+	[0.10207018, 0.0, 0.0333271, 0.3900703, 0.25730472, 0.21722769]
+	[0.21646129, 0.4039475, 0.0, 0.14730102, 0.0214132, 0.21087699]
+	[0.3398219, 0.03363394, 0.33816434, 0.0, 0.06432567, 0.22405415]
+	[0.04245023, 0.29305266, 0.20438589, 0.10613331, 0.0, 0.35397791]
+	[0.10536843, 0.28973397, 0.2575056, 0.05345188, 0.29394011, 0.0]
+waiting time distributions = 
+	(type = gamma, shape = 15.707963267948966, scale = 0.13133124729190362)
+	(type = gamma, shape = 15.707963267948966, scale = 0.11471755369656024)
+	(type = gamma, shape = 15.707963267948966, scale = 0.1305948251531484)
+	(type = gamma, shape = 15.707963267948966, scale = 0.12542694357224624)
+	(type = gamma, shape = 15.707963267948966, scale = 0.15504453176632416)
+	(type = gamma, shape = 15.707963267948966, scale = 0.12540816824839984)
+
+[Observation Model]
+values = [1, 2, 3, 4, 5, 6]
+noise model = additive Gaussian noise
+standard deviation = 0.5
+
+[Hyperparametrization]
+observation process = (type = gamma point process, shape = 5.0, scale = 0.25)
+parametrization setting = evaluation_04
+
