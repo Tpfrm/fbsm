@@ -5,9 +5,8 @@ Usage:
 
 2. use 'run_forward_backward.py' on the generated file with any of the following settings
 
-+-----------+------------+---------------------+------------+--------------------------------------------------------------------------+
 |  Action   |   Method   |      Equation       |    Grid    |                               Resulting in                               |
-+-----------+------------+---------------------+------------+--------------------------------------------------------------------------+
+|-----------|------------|---------------------|------------|--------------------------------------------------------------------------|
 | forward   | discrete   | don't care          | don't care | Standard HSMM forward algorithm (reference)                              |
 | forward   | continuous | integrodifferential | don't care | Forward algorithm (paper)                                                |
 | forward   | continuous | integral            | uniform    | Forward currents -> forward marginals (uniform grid, paper)              |
@@ -18,7 +17,6 @@ Usage:
 | backward  | continuous | integral            | adaptive   | Backward currents -> backward marginal likelihood (adaptive HSMM, paper) |
 | posterior | discrete   | don't care          | don't care | Standard HSMM posterior marginal inference                               |
 | posterior | continuous | don't care          | don't care | Posterior marginal inference from forward/backward currents (paper)      |
-+-----------+------------+---------------------+------------+--------------------------------------------------------------------------+
 
     - the results file is found under 'results_raw/forward_backward/<ID>' with proper naming
 
